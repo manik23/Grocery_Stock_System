@@ -1,7 +1,11 @@
 package Stock;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+=======
+import java.util.HashMap;
+>>>>>>> 6d0a990b815bcd1427f4030b180c6e5d3305b2f5
 import java.util.Map;
 
 import product.*;
@@ -20,6 +24,7 @@ public class _Stock {
             hash.put(name , new _product(name, quantity, price, profit));
         }
     }
+<<<<<<< HEAD
 
     public double consume_stock(String name, double quantity){
         if(hash.containsKey(name) && hash.get(name).quantity>0){
@@ -42,13 +47,19 @@ public class _Stock {
     }
 
 
+=======
+>>>>>>> 6d0a990b815bcd1427f4030b180c6e5d3305b2f5
     public void _display()
     {
         for(Map.Entry<String,_product> x : hash.entrySet())
         {
             System.out.println(x.getValue());
         }    
+<<<<<<< HEAD
        
+=======
+        
+>>>>>>> 6d0a990b815bcd1427f4030b180c6e5d3305b2f5
     }
 
 
@@ -56,15 +67,23 @@ public class _Stock {
     {
         _Stock obj= new _Stock();
         obj.add_stock("atta",10.0,50.0,20.0);
+<<<<<<< HEAD
         obj.add_stock("rice",0,100.0,15.0);
         obj.add_stock("corn",10.0,30.0,5.0);
         obj.add_stock("haldi",10.0,20.0,10.0);
         obj._display();
         double price = obj.consume_stock("rice",10);
         System.out.println(price);
+=======
+        obj._display();
+>>>>>>> 6d0a990b815bcd1427f4030b180c6e5d3305b2f5
 
 
     }
     
 }
 
+<<<<<<< HEAD
+=======
+// Name, quantity,price
+>>>>>>> 6d0a990b815bcd1427f4030b180c6e5d3305b2f5
