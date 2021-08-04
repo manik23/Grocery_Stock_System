@@ -16,6 +16,10 @@ public class _product {
         counter += 1;
         this.id = counter;
     }
+    public String toString()
+    {
+        return name + " " + price;
+    }
 
     public static void main(String[] args) {
         
